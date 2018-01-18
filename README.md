@@ -3,8 +3,8 @@
 This repository contains all of presentation slides for Computer Science 103
 Spring 2018. Each HTML file in this repository contains one "deck" of slides for a
 module of this course. To learn more about the course in which these assignments
-were completed, please visit the [Computer Science 111 Fall 2017 GitHub
-Organization](https://github.com/Allegheny-Computer-Science-111-F2017). The
+were completed, please visit the [Computer Science 112 Spring 2018 GitHub
+Organization](https://github.com/Allegheny-Computer-Science-112-Spring2018). The
 source code of the slides uses
 [reveal.js](https://github.com/hakimel/reveal.js/) framework to control the
 display of each slide. I have developed a custom theme for the slides that
@@ -20,14 +20,13 @@ then acknowledge it in your own presentation slides?
 You can type the following command if you want to clone this repository:
 
 ```shell
-git clone https://github.com/Allegheny-Computer-Science-111-F2017/cs111-F2017-slides.git
+git clone https://github.com/Allegheny-Computer-Science-112-Spring2018/cs112-Spring2018-slides.git
 ```
 
-Please note that the presentation uses local fonts so that it can be displayed
-on a laptop that either may not have access to the Internet or may only have
-unreliable Internet access. Some browsers may disallow the loading of local
-fonts due to security concerns. However, it should be possible for you to view
-the presentation correctly when using Chrome or Chromium on the Ubuntu operating
+Please note that the presentation uses remote fonts and thus will not correctly
+display on a laptop that either may not have access to the Internet or may only
+have unreliable Internet access. Also, it should be possible for you to view the
+presentation correctly when using Chrome or Chromium on the Ubuntu operating
 system &mdash; this is my primary development environment and the one that I
 used to present these slides. However, I anticipate that the presentation slides
 will display correctly on a wide variety of operating systems and browsers.
@@ -44,7 +43,7 @@ serve 4100
 ```
 
 Now, for instance, you can navigate to the Web site
-`http://localhost:4100/cs111_chapter1.html` and view the presentation.
+`http://localhost:4100/cs112_chapter1.html` and view the presentation.
 Ultimately, if you are unable to get the presentation to display correctly in
-your own web browser, then please open a new issue and I will attempt to resolve
-your concerns.
+your own web browser, then please open a new issue and I will attempt to
+resolve your concerns.
