@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-7">
+
+    <title>Computer Science 112: Introduction to Computer Science II</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 112">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/tomorrow&#45;night&#45;bright.css">         -->
+    <!-- <link rel="stylesheet" href="lib/css/tomorrow&#45;night&#45;bright.css"> -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet" type="text/css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = 'css/print/pdf.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="https://farm5.static.flickr.com/4479/36889356713_af3ef38e74_z.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 112:</h1>
+          <h2>Introduction to Computer Science II</h2>
+          <p>Gregory M. Kapfhammer</p>
+          <br /><small><a title="L1004446" href="https://flickr.com/photos/101438866@N04/36889356713">flickr photo by</a> by <a href="https://flickr.com/people/101438866@N04">physician1977</a> shared under a <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC Public Domain Dedication (CC0)</a> </small>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in the Textbook</b></p>
+        </section>
+
+        <section>
+          <h1>Software Development</h1>
+          <p class="fragment">Design</p>
+          <p class="fragment">Implementation</p>
+          <p class="fragment">Testing</p>
+          <p class="fragment">Debugging</p>
+        </section>
+
+        <section>
+          <h1>Using Pseudocode</h1>
+          <p class="fragment"><b class="orange">Express the basic operations of our programs</b></p>
+          <p class="fragment"><b class="orange">Avoid the implementation complexities of Java</b></p>
+          <p class="fragment"><b class="green">Any questions about using pseudocode?</b></p>
+        </section>
+
+        <section>
+          <h1>Style of Code Comments</h1>
+          <p class="fragment"><b class= "orange">Let's use the JavaDoc standard!</b></p>
+          <p class="fragment"><b class="green">Why is it appropriate to adopt this standard?</b></p>
+          <p class="fragment"><b class="green">Benefits? Drawbacks?</b></p>
+        </section>
+
+        <section>
+          <h1>Software Testing</h1>
+          <p class="fragment">Goal: Establish a confidence in program correctness</p>
+          <p class="fragment">Goal: Identify defects into our programs</p>
+          <p class="fragment"><b class="orange">Make sure that you pick the correct inputs!</b></p>
+        </section>
+
+        <section>
+          <h1><b class="red">Complete the testing activity with a partner</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="red">Run the tests for Kinetic</b></h1>
+          <p class="fragment">Set your <code>CLASSPATH</code> to contain <code>junit.jar</code></p>
+          <p class="fragment">Compile your program using the <code>javac</code> command</p>
+          <p class="fragment">Run: <code>java junit.textui.TestRunner TestKinetic</code></p>
+          <p class="fragment">Run: <code>java junit.swingui.TestRunner TestKinetic</code></p>
+        </section>
+
+        <section>
+          <h1><b class="green">Is there a defect in the program?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Evidence for the defect?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Wait! Did all of the test cases fail? Why not?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Passing tests? Failing tests? Explain why?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="red">Determine the input and status of each test case</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Not all test cases are equivalent!</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Any questions about software development?</b></h1>
+        </section>
+
+      </div>
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.min.js"></script>
+
+      <script>
+
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+
+  theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+  transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+  // Parallax scrolling
+  // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+  // parallaxBackgroundSize: '2100px 900px',
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});
+
+      </script>
+
+  </body>
+</html>
