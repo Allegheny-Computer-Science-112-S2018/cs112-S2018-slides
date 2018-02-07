@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-7">
+
+    <title>Computer Science 112: Introduction to Computer Science II</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 112">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet" type="text/css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = 'css/print/pdf.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="https://farm5.static.flickr.com/4479/36889356713_af3ef38e74_z.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 112:</h1>
+          <h2>Introduction to Computer Science II</h2>
+          <p>Gregory M. Kapfhammer</p>
+          <br /><small><a title="L1004446" href="https://flickr.com/photos/101438866@N04/36889356713">flickr photo by</a> by <a href="https://flickr.com/people/101438866@N04">physician1977</a> shared under a <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC Public Domain Dedication (CC0)</a> </small>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in the Textbook</b></p>
+        </section>
+
+        <section>
+          <h1 id="what_is_an_array?"><b class="green">What is an Array?</b></h1>
+        </section>
+
+        <section>
+          <h1 id="motivation_for_using_arrays"><b class="orange">Motivation for Using Arrays</b></h1>
+        </section>
+
+        <section>
+          <h1 id="important_details">Important Details</h1>
+          <p class="fragment"><b class="orange">An array stores a list of values</b></p>
+          <p class="fragment"><b class="orange">The number corresponding to each position is the index</b></p>
+          <p class="fragment"><b class="orange">An array of size N is indexed from 0 to N-1</b></p>
+          <p class="fragment"><b class="green">Why do we start the index at the value of 0?</b></p>
+        </section>
+
+        <section>
+          <h1 id="array_bounds_checking">Array Bounds Checking</h1>
+          <p class="fragment"><b class="orange">Ensures that the index is within the array</b></p>
+          <p class="fragment"><b class="green">Why is this important to perform?</b></p>
+          <p class="fragment">Let's avoid buffer overflow attacks!</p>
+          <p class="fragment">Also, enables the detection of program defects</p>
+          <p class="fragment"><b class="green">Can this be fully done at compile time?</b></p>
+          <p class="fragment"><b class="green">What are the associated overheads?</b></p>
+        </section>
+
+        <section>
+          <h1 id="array_details">Array Details</h1>
+          <p class="fragment"><b class="green">How do we declare an array?</b></p>
+          <p class="fragment"><code>int[] grades;</code> and <code>int grades[];</code> are both acceptable</p>
+          <p class="fragment">Be consistent when you are implementing your programs!</p>
+          <p class="fragment"><b class="green">How do we initialize an array to specific values?</b></p>
+          <p class="fragment"><code>int[] scores = {87, 98, 60, 80};</code></p>
+        </section>
+
+        <section>
+          <h1 id="arrays_as_parameters">Arrays as Parameters</h1>
+          <p class="fragment"><b class="green">What method always accepts an array as a parameter?</b></p>
+          <p class="fragment">An array as a parameter can be modified</p>
+          <p class="fragment">You can change the contents of the array</p>
+          <p class="fragment">You cannot make the array refer to another array</p>
+        </section>
+
+        <section>
+          <h1 id="command-line_arguments">Command-Line Arguments</h1>
+          <p class="fragment"><b class="green">Are there other ways to give a program input?</b></p>
+          <p class="fragment">Yes! You can input command-line arguments.</p>
+          <p class="fragment">Did you ever notice that <code>main</code> has a parameter?</p>
+          <p class="fragment">What is the purpose of <code>String[] args</code>?</p>
+        </section>
+
+        <section>
+          <h1>TicTacToe</h1>
+          <p class="fragment"><b class="green">What is the meaning of? ... </b></p>
+          <p class="fragment"><code>private int board[][] = new int[3][3];</code></p>
+          <p class="fragment"><code>board[0][0] + board[0][1] + board[0][2]</code></p>
+          <p class="fragment"><code>String[] outcome = {"O wins", "Tie", "X wins"};</code></p>
+          <p class="fragment"><b class="green">What is the output of this program?</b></p>
+        </section>
+
+        <section>
+          <h1>CaesarCipher</h1>
+          <p class="fragment"><b class="green">What is the purpose of this class?</b></p>
+          <p class="fragment"><b class="green">What is the meaning of? ... </b></p>
+          <p class="fragment"><code>protected char[] encoder = new char[26];</code></p>
+          <p class="fragment"><code>encoder[k] = (char) ('A' + (k + rotation) % 26</code></p>
+          <p class="fragment"><code>for (int k=0; &lt; msg.length; k++)</code></p>
+          <p class="fragment"><code>if (Character.isUpperCase(msg[k]))</code></p>
+          <p class="fragment"><code>msg[k] = code[j];</code></p>
+          <p class="fragment"><b class="green">What is the output of this program?</b></p>
+        </section>
+
+        <section>
+          <h1 id="motivation_for_using_arrays"><b class="blue">Any questions about arrays?</b></h1>
+        </section>
+
+      </div>
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.min.js"></script>
+
+      <script>
+
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+
+  theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+  transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+  // Parallax scrolling
+  // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+  // parallaxBackgroundSize: '2100px 900px',
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});
+
+      </script>
+
+  </body>
+</html>
