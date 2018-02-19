@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-7">
+
+    <title>Computer Science 112: Introduction to Computer Science II</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 112">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet" type="text/css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = 'css/print/pdf.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="https://farm8.static.flickr.com/7079/7223111614_83d981ac85_z.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 112:</h1>
+          <h2>Introduction to Computer Science II</h2>
+          <p>Gregory M. Kapfhammer</p>
+          <br /><small><a title="St. Catherine's School Art (39)" href="https://flickr.com/photos/billboardartproject/7223111614">flickr photo</a> shared by <a href="https://flickr.com/people/billboardartproject">Billboard Art Project</a> under a <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons ( BY-NC-ND ) license</a> </small>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in the Textbook</b></p>
+        </section>
+
+        <section>
+          <h1>Data Structure</h1>
+          <p class="fragment">Systematic way of organizing and accessing data</p>
+        </section>
+
+        <section>
+          <h1>Algorithm</h1>
+          <p class="fragment">A step-by-step for performing a task in a finite time</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Running time of algorithms as they process data structures</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Larger inputs lead to longer running times</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">What about the space overhead of an algorithm?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Trade-off time and space overhead</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="blue">See Code Fragment 4.1 for a timing method</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">We have done this already in several assignments!</b></h1>
+        </section>
+
+        <section>
+          <h1>Challenges</h1>
+          <p class="fragment">Comparable results only when using same environment</p>
+          <p class="fragment">Limited set of inputs may lead to incorrect conclusions</p>
+          <p class="fragment">You must fully implement and test the algorithms</p>
+        </section>
+
+        <section>
+          <h1><b class="green">Is there an alternative?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Yes!</b></h1>
+        </section>
+
+        <section>
+          <h1>Our Goals</h1>
+          <p class="fragment">Work independent of hardware and software</p>
+          <p class="fragment">Takes into account all possible inputs</p>
+          <p class="fragment">Does not require algorithm implementation</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Count primitive operations</b></h1>
+        </section>
+
+        <section>
+          <h1>Primitive Operations</h1>
+          <p class="fragment">Assign a value to a variable</p>
+          <p class="fragment">Follow an object reference</p>
+          <p class="fragment">Compare two numbers</p>
+          <p class="fragment">Return from a method</p>
+          <p class="fragment">Call a method</p>
+          <p class="fragment"><b class="green">Any questions about these types of operations?</b></p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Focus on the worst-case behavior</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Look for iteration constructs</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Nesting of iteration constructs</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Timings</b></h1>
+          <p class="fragment">Set your CLASSPATH to contain profiler.jar</p>
+          <p class="fragment">Study the source code of this program!</p>
+          <p class="fragment">Compile the ExampleTimings program</p>
+          <p class="fragment">Run: java ExampleTimings 10000 quadratic</p>
+          <p class="fragment">Perform a wide variety of experiments</p>
+          <p class="fragment"><b class="green">Any questions about these results?</b></p>
+        </section>
+
+        <section>
+          <h1><b class="green">Other types of algorithm performance behavior?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Worst-case</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Average-case</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Best-case</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="blue">See Figure 4.2 for an example</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Algorithm performance with a function</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Operations as function of input size</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">The Seven Functions</b></h1>
+        </section>
+
+        <section>
+          <h1>Growth Rates</h1>
+          <p class="fragment">Constant</p>
+          <p class="fragment">Logarithm</p>
+          <p class="fragment">Linear</p>
+          <p class="fragment">n-log-n</p>
+          <p class="fragment">Quadratic</p>
+          <p class="fragment">Cubic</p>
+          <p class="fragment">Exponential</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Fast-growing function, slow algorithm</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Slow-growing function, fast algorithm</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="blue">See Figure 4.4 to compare the growth rates!</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Any questions about these functions?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Focusing on worst-case behavior</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">The "Big-Oh" Notation</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange"><em>f(n)</em> is <em>O(g(n))</em></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange"><em>f(n)</em> is order <em>g(n)</em></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange"><em>f(n)</em> is bounded above by <em>g(n)</em></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Asymptotic sense as <em>n</em> grows toward infinity</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="purple">Let's visualize this with a diagram!</b></h1>
+        </section>
+
+        <section>
+          <h1>Algorithm Growth Rates</h1>
+          <p class="fragment">log n: 3, 4, 5, 6, 7, 8, 9 </p>
+          <p class="fragment">n: 8, 16, 32, 64, 128, 256, 512</p>
+          <p class="fragment">Quadratic: 64, 256, 1024, 4096, 16384, 65536, 262144</p>
+          <p class="fragment"><b class="orange">Cubic and exponential grow much faster!</b></p>
+          <p class="fragment"><b class="green">Any questions about these growth rates?</b></p>
+        </section>
+
+        <section>
+          <h1><b class="red">Organize into teams of two or three</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Which algorithm would you pick?</b></h1>
+        </section>
+
+        <section>
+          <h1>Algorithm Choices</h1>
+          <p class="fragment">Fast algorithm running on a slow computer</p>
+          <p class="fragment">Slow algorithm running on a fast computer</p>
+        </section>
+
+        <section>
+          <h1>Algorithm Choices</h1>
+          <p class="fragment">Good algorithm design is very important</p>
+          <p class="fragment">Ensure that your algorithm has a slow growth rate</p>
+          <p class="fragment">Dramatic speedups in hardware cannot overcome asymptotically slow algorithms</p>
+          <p class="fragment"><b class="blue">See Tables 4.4 and 4.5 for more details!</b></p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Examples of algorithm analysis</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">arrayMax on page 171</b></h1>
+          <p class="fragment">This algorithm is O(n)!</p>
+          <p class="fragment">Can you clearly explain why?</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">repeat1 on page 172</b></h1>
+          <p class="fragment">This algorithm is O(n<sup>2</sup>)!</p>
+          <p class="fragment">Can you clearly explain why?</p>
+        </section>
+
+        <section>
+          <h1><b class="green">Why is repeat1 slower than repeat2?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">unique1 on page 174</b></h1>
+          <p class="fragment">This algorithm is O(n<sup>2</sup>)!</p>
+          <p class="fragment">Can you clearly explain why?</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">unique2 on page 175</b></h1>
+          <p class="fragment">This algorithm is O(n&#215logn)!</p>
+          <p class="fragment">Can you clearly explain why?</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Interplay between theory and experiment</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Questions about algorithm analysis?</b></h1>
+        </section>
+
+      </div>
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.min.js"></script>
+
+      <script>
+
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+
+  theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+  transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+  // Parallax scrolling
+  // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+  // parallaxBackgroundSize: '2100px 900px',
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});
+
+      </script>
+
+  </body>
+</html>
+
