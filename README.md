@@ -1,4 +1,4 @@
-# cs103-S2018-slides
+# cs112-S2018-slides
 
 This repository contains all of presentation slides for Computer Science 103
 Spring 2018. Each HTML file in this repository contains one "deck" of slides for a
